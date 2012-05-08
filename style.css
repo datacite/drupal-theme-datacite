@@ -1,7 +1,7 @@
 /* $Id: style.css,v 1.94 2011/01/11 20:18:47 jarek Exp $ */
 
 /**
- * Layout
+ * Layout datacite
  */
 #main-wrapper,
 #sidebar-first,
@@ -22,11 +22,11 @@ body.two-sidebars #sidebar-second {
   width: 21.9%;
 }
 body.one-sidebar #main-wrapper {
-  width: 70%;
+  width: 72%;
 }
 body.one-sidebar #sidebar-first,
 body.one-sidebar #sidebar-second {
-  width: 29.7%;
+  width: 27.7%;
 }
 body.no-sidebars #main-wrapper,
 body.page-admin #main-wrapper {
@@ -156,7 +156,7 @@ html {
  */
 #branding-wrapper {
   float: left;
-  padding: 45px 0 48px 25px; /* LTR */
+  padding: 20px 0 20px 25px; /* LTR */
 }
 #branding {
   display: table;
@@ -195,7 +195,7 @@ html {
   font-size: 1.167em;
   font-weight: 700;
   margin: 2px 0 0 3px; /* LTR */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 /**
@@ -403,10 +403,10 @@ ul.menu li ul.menu {
   margin: 0 0 5px 0;
   padding: 0 0 4px 0;
   font-size: 1.333em;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.4px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .block ul {
   list-style-position:inside;
@@ -471,7 +471,7 @@ ul.menu li ul.menu {
 h1.page-title,
 .node h2.node-title {
   border-bottom: none;
-  font-size: 2.167em;
+  font-size: 1.8em;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -701,7 +701,7 @@ body.page-forum ul.action-links {
 }
 #forum td.container .name a {
   font-size: 1.25em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   line-height: 1.3;
   padding: 0 0 4px 0;
   color: inherit;
@@ -1376,7 +1376,7 @@ table#permissions td.module {
   font-size: 1.083em;
   font-weight: 700;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 tr.region-populated {
   display: none;
@@ -1517,7 +1517,7 @@ body.page-admin-structure-block-demo-datacite #closure {
   font-weight: 700;
   color: #ff3e00;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 #sidebar-first .block-region,
 #sidebar-second .block-region {

@@ -71,7 +71,7 @@
   <div id="main">
     <div id="page" class="clearfix">
 
-      <?php if ($breadcrumb): ?><div id="breadcrumb" class="clearfix"><?php print $breadcrumb; ?></div><?php endif; ?>
+    <?php /* if ($breadcrumb): ?><div id="breadcrumb" class="clearfix"><?php print $breadcrumb; ?></div><?php endif; */ ?>
       <?php if ($messages): ?><div id="messages"><?php print $messages; ?></div><?php endif; ?>
       <?php print render($page['content_top']); ?>
 
@@ -96,7 +96,7 @@
 
       <div id="closure" class="clearfix">
         <div id="info">
-          <span id="copyright"><?php print theme_get_setting('copyright_information'); ?></span><?php if (theme_get_setting('copyright_information') != ''): ?>. <?php endif; ?>Drupal theme by <a href="http://www.kiwi-themes.com">Kiwi Themes</a>.
+          <span id="copyright"><?php print theme_get_setting('copyright_information'); ?></span><?php if (theme_get_setting('copyright_information') != ''): ?>. <?php endif; ?>
         </div>
 
         <?php if ($page['footer_menu']): ?>

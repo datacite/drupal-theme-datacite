@@ -1,7 +1,7 @@
 /* $Id: base.css,v 1.30 2010/07/12 19:08:04 jarek Exp $ */
 
 /**
- * Properties inherited by all elements
+ * Properties inherited by all elements datacite
  */
 html {
   line-height: 1.5;
@@ -13,7 +13,7 @@ html {
  */
 html,
 #wrapper-p * {
-  font-family: Arial, FreeSans, sans-serif;
+  font-family: Verdana, Arial, FreeSans, sans-serif;
 }
 h1,
 h2,
@@ -24,7 +24,7 @@ h3,
 #forum td.container .name a,
 tr.region-title td,
 table#permissions td.module {
-  font-family: "Trebuchet MS", "Myriad Pro", "Bitstream Vera Sans", FreeSans, sans-serif;
+  font-family: Verdana, "Trebuchet MS", "Myriad Pro", "Bitstream Vera Sans", FreeSans, sans-serif;
 }
 h6 {
   font-family: Verdana, Helvetica, Arial, FreeSans, sans-serif;
@@ -47,7 +47,7 @@ h1 em {
 }
 h2 {
   margin: 7px 0 7px;
-  font-size: 1.9em;
+  font-size: 1.8em;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -180,13 +180,13 @@ i {
 ul,
 ol,
 dl {
-  list-style-position: inside;
+  list-style-position: outside;
 }
 p + ul {
   margin-top: 5px;
 }
 ul {
-  list-style: disc inside none;
+  list-style: disc outside none;
   margin: 0 0 0 15px; /* LTR */
 }
 li > ul {
@@ -201,7 +201,7 @@ ul.links li {
   padding: 0;
 }
 ol {
-  list-style: decimal inside none;
+  list-style: decimal outside none;
   margin: 0 0 0 15px; /* LTR */
 }
 dt {
