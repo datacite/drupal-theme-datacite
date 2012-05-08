@@ -95,8 +95,6 @@
              $action = "Created";
              $timestamp = $node->created;
            }
-           print $node->created . "<br/>";
-           print $node->published_at . "<br/>";
         ?>
         <span class="submitted"><?php print t('!action by !username on !datetime', array('!action' => $action, '!username' => $name, '!datetime' => format_date($timestamp))); ?></span>
       </div>
