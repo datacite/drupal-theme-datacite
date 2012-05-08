@@ -87,7 +87,18 @@
 
     <?php if ($display_submitted): ?>
       <div class="meta">
-        <span class="submitted"><?php print t('Submitted by !username on !datetime', array('!username' => $name, '!datetime' => $date)); ?></span>
+        <?php
+           if ($node->published_at) {
+             $action = "Published";
+             $timestamp = $node->published_at;
+           } else {
+             $action = "Created";
+             $timestamp = $node->created;
+           }
+           print $node->created . "<br/>";
+           print $node->published_at . "<br/>";
+        ?>
+        <span class="submitted"><?php print t('!action by !username on !datetime', array('!action' => $action, '!username' => $name, '!datetime' => format_date($timestamp))); ?></span>
       </div>
     <?php endif; ?>
   </div> <!-- /.node-header -->
