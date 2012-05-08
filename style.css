@@ -1619,3 +1619,12 @@ fieldset .action {
 .compact-link {
   margin-bottom: 5px;
 }
+
+.content dt {
+  font-weight: normal;
+}
+
+.content dd {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
