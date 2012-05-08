@@ -1493,20 +1493,20 @@ table.system-status-report tr.error {
 .system-themes-list-disabled .theme-info {
   min-height: 0;
 }
-/* admin/structure/block/demo/corolla */
-body.page-admin-structure-block-demo-corolla #sidebar-first,
-body.page-admin-structure-block-demo-corolla #sidebar-second,
-body.page-admin-structure-block-demo-corolla #header-menu,
-body.page-admin-structure-block-demo-corolla #header-wrapper {
+/* admin/structure/block/demo/datacite */
+body.page-admin-structure-block-demo-datacite #sidebar-first,
+body.page-admin-structure-block-demo-datacite #sidebar-second,
+body.page-admin-structure-block-demo-datacite #header-menu,
+body.page-admin-structure-block-demo-datacite #header-wrapper {
   display: block;
 }
-body.page-admin-structure-block-demo-corolla #main-wrapper {
+body.page-admin-structure-block-demo-datacite #main-wrapper {
   width: 56%;
 }
-body.page-admin-structure-block-demo-corolla div.add-or-remove-shortcuts {
+body.page-admin-structure-block-demo-datacite div.add-or-remove-shortcuts {
   display: none;
 }
-body.page-admin-structure-block-demo-corolla #closure {
+body.page-admin-structure-block-demo-datacite #closure {
   display: block;
 }
 .block-region {

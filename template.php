@@ -9,7 +9,7 @@
 /**
  * Override or insert variables into the html template.
  */
-function corolla_preprocess_html(&$variables) {
+function datacite_preprocess_html(&$variables) {
   // Add reset.css
   drupal_add_css($data = path_to_theme() . '/reset.css', $options['type'] = 'file', $options['weight'] = CSS_SYSTEM - 2);
 
@@ -28,7 +28,7 @@ function corolla_preprocess_html(&$variables) {
 /**
  * Override or insert variables into the html template.
  */
-function corolla_process_html(&$variables) {
+function datacite_process_html(&$variables) {
   // Hook into color module
   if (module_exists('color')) {
     _color_html_alter($variables);
@@ -38,7 +38,7 @@ function corolla_process_html(&$variables) {
 /**
  * Override or insert variables into the page template.
  */
-function corolla_process_page(&$variables) {
+function datacite_process_page(&$variables) {
   // Since the title and the shortcut link are both block level elements,
   // positioning them next to each other is much simpler with a wrapper div.
   if (!empty($variables['title_suffix']['add_or_remove_shortcut']) ) {
@@ -86,7 +86,7 @@ function corolla_process_page(&$variables) {
 /**
  * Override or insert variables into the block template.
  */
-function corolla_preprocess_block(&$variables) {
+function datacite_preprocess_block(&$variables) {
   // Remove "block" class from blocks in "Main page content" region
   if ($variables['elements']['#block']->region == 'content') {
     foreach ($variables['classes_array'] as $key => $val) {
@@ -105,7 +105,7 @@ function corolla_preprocess_block(&$variables) {
  * @return
  *   A string containing the breadcrumb output.
  */
-function corolla_breadcrumb($variables) {
+function datacite_breadcrumb($variables) {
   // Wrap separator with span element.
   if (!empty($variables['breadcrumb'])) {
     // Provide a navigational heading to give context for breadcrumb links to
@@ -124,7 +124,7 @@ function corolla_breadcrumb($variables) {
  *   - url: The url of the main page.
  *   - title: A descriptive verb for the link, like 'Read more'.
  */
-function corolla_more_link($variables) {
+function datacite_more_link($variables) {
   return '<div class="more-link">' . l(t('More ›'), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
 }
 
@@ -141,7 +141,7 @@ function corolla_more_link($variables) {
  *   - display: (optional) Set to 'status' or 'error' to display only messages
  *     of that type.
  */
-function corolla_status_messages($variables) {
+function datacite_status_messages($variables) {
   $output = '';
   $status_heading = array(
     'status' => t('Status message'),
@@ -170,7 +170,7 @@ function corolla_status_messages($variables) {
  *   An associative array containing:
  *   - style: Set to either 'asc' or 'desc', this determines which icon to show.
  */
-function corolla_tablesort_indicator($variables) {
+function datacite_tablesort_indicator($variables) {
   // Use custom arrow images.
   if ($variables['style'] == 'asc') {
     return theme('image', array('path' => path_to_theme() . '/images/tablesort-ascending.png', 'alt' => t('sort ascending'), 'title' => t('sort ascending')));
